@@ -16,3 +16,8 @@ Functions :
             1.3.1 Base values : ```list->length = 0```
                                 ```list->items = (void *) 0```
             1.3.2 The item size parameter is the size of the type of variables you want to store.
+
+Markup : * Bullet list
+              * Nested bullet
+                  * Sub-nested bullet etc
+          * Bullet list item 2
