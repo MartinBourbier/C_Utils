@@ -1,5 +1,5 @@
 # C_Utils
-A C Library Implementing Basic Data Structures and several algorithms
+A C Library Implementing Basic Data Structures And Several Algorithms.
 
 # Copyright
 This library is entierely free to use. Feel free to add it to your project of any kind and don't hesitate to create a ticket if you'd like anything to be added.
@@ -30,6 +30,10 @@ Functions :
 * ```void list_free(list_T *list, void (*free_method)(void *x))```
     * This function frees the list's ```list``` memory.
     * A function ```free_method``` can be passed in to free every items from the list.
+
+## Queue
+
+
 
 ## Binary Trees
 
