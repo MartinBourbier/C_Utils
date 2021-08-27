@@ -28,5 +28,23 @@ Functions :
     * If the item ```item``` is not found in the list, an error message is printed. /!\ BE CAREFUL ! The message printed if the item is not in the list is a printed message followed by a retrun statement, it is not outputed in the error stream !
 
 * ```void list_free(list_T *list, void (*free_method)(void *x))```
-    * This function frees the list's ````list``` memory.
-    * A function ```free_method``` can be passed in to free every item from the list.
+    * This function frees the list's ```list``` memory.
+    * A function ```free_method``` can be passed in to free every items from the list.
+
+## Binary Trees
+
+Functions :
+* ```uint32_t tree_size(tree_T *tree)```
+    * This function returns the size of the tree ```tree``` passed as an argument. 
+    * The size of a tree is the number of nodes of the tree.
+
+* ```int32_t tree_height(tree_T *tree)```
+    * This function returns the height of the tree ```tree``` passed in argument.
+    * The height of an empty tree is ```-1```. The size of the tree is the depth of it's deepest child.
+
+* ```void tree_prefix_print(tree_T *tree)```
+    * This function prints the tree ```tree``` nodes value in prefix order.
+
+* ```void tree_breadth_print(tree_T *tree)```
+    * This function prints the tree ```tree``` depending on the depth of the node.
+    * /!\ BE CAREFUL ! The printing is really not ideal, so don't relate on this function to visualize the different links between a node an it's parent.
