@@ -3,19 +3,20 @@
 
 #include <stdint.h>
 
-typedef struct LIST_STRUCT {
-    struct LIST_STRUCT *next;
-    void               *value;
-} list;
+typedef struct DYNAMIC_LIST_STRUCT {
+	int32_t item_size;
+	int32_t length;
+	void **items;
+} list_T;
 
-list *empty_list();
+list_T *init_list(int32_t item_size);
 
-int list_is_empty(list *list);
+void *list_append(list_T *list, void *item);
 
-void list_add(list *list, void *elmt);
+void list_shift_left(list_T *list, int32_t index);
 
-uint32_t list_len(list *list);
+void list_remove(list_T *list, void *item, void (*free_method)(void *x));
 
-void list_remove(list **list, struct LIST_STRUCT *elm);
+void list_free(list_T *list, void (*free_method)(void *x));
 
 #endif
