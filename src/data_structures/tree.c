@@ -1,5 +1,5 @@
-#include "include/tree.h"
-#include "include/queue.h"
+#include "../include/data_structures/tree.h"
+#include "../include/data_structures/queue.h"
 
 #include <stdlib.h>
 #include <stdio.h>

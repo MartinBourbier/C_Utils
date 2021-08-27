@@ -1,4 +1,4 @@
-#include "include/list.h"
+#include "../include/data_structures/list.h"
 
 #include <stdlib.h>
 #include <stdio.h>

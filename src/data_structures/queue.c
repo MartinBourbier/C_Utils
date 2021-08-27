@@ -1,4 +1,4 @@
-#include "include/queue.h"
+#include "../include/data_structures/queue.h"
 
 #include <stdlib.h>
 

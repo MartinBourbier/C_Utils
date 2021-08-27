@@ -31,7 +31,7 @@ Functions :
     * This function frees the list's ```list``` memory.
     * A function ```free_method``` can be passed in to free every items from the list.
 
-## Queue
+## Queues
 
 Functions :
 * ```queue_T *queue_empty(void)```
