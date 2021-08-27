@@ -19,4 +19,6 @@ void list_remove(list_T *list, void *item, void (*free_method)(void *x));
 
 void list_free(list_T *list, void (*free_method)(void *x));
 
+void list_swap_values(list_T *list, int32_t i, int32_t j);
+
 #endif

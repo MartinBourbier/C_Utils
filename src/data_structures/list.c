@@ -69,3 +69,15 @@ void list_free(list_T *list, void (*free_method)(void *x)) {
 	free(list->items);
 	free(list);
 }
+
+void list_swap_values(list_T *list, int32_t i, int32_t j) {
+	if (i > list->length - 1 ||j > list->length - 1) {
+		printf("[List swap values]: One of the given index is out of the list length.\n");
+		return;
+	}
+
+	void *tmp = list->items[0];
+
+	list->items[0] = list->items[1];
+	list->items[1] = tmp;
+}

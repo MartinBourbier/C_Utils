@@ -31,6 +31,10 @@ Functions :
     * This function frees the list's ```list``` memory.
     * A function ```free_method``` can be passed in to free every items from the list.
 
+* ```void list_swap_values(list_T *list, int32_t i, int32_t j)```
+    * This function swaps values at index ```i``` and ```j```.
+    * If one value is out of range, prints an error and returns. /!\ BE CAREFUL ! The error is printed in the standard output and not in the error stream.
+
 ## Queues
 
 Functions :
