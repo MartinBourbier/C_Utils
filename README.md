@@ -33,7 +33,20 @@ Functions :
 
 ## Queue
 
+Functions :
+* ```queue_T *queue_empty(void)```
+    * This function return ```NULL```, the empty queue.
 
+* ```int queue_is_empty(queue_T *queue)```
+    * Returns ```1``` if the queue ```queue``` is empty, ```0``` otherwise.
+
+* ```queue_T *queue_push(queue_T *queue, void *x)```
+    * This function pushes the value ```x``` into the queue ```queue```.
+    * The parameter ```x``` can be any value of any type.
+
+* ```void *queue_pop(queue_T **queue)```
+    * This function pops (remove and return) the first value of the queue ```queue```.
+    * /!\ BE CAREFUL ! The returned value is a void pointer (```(void *)```), the value can be of any type so make sure to adapt your code depending on the type of the value you are storing.
 
 ## Binary Trees
 
