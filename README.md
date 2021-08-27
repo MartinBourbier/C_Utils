@@ -9,15 +9,10 @@ This library is entierely free to use. Feel free to add it to your project of an
 ## Lists
 
 Functions : 
-    1. ```list_T *init_list(int32_t item_size)```
-        1.1 This function is used to initialize a list. It returns a pointer to the newly created structure
-        1.2 Allocates memory space for the structure.
-        1.3 Sets the structure's parameters : 
-            1.3.1 Base values : ```list->length = 0```
-                                ```list->items = (void *) 0```
-            1.3.2 The item size parameter is the size of the type of variables you want to store.
-
-Markup : * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
+* ```list_T *init_list(int32_t item_size)```
+    * This function is used to initialize a list. It returns a pointer to the newly created structure
+    * Allocates memory space for the structure.
+    * Sets the structure's parameters : 
+        * Base values : ```list->length = 0```
+                            ```list->items = (void *) 0```
+        * The item size parameter is the size of the type of variables you want to store.
