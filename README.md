@@ -1,5 +1,5 @@
 # C_Utils
-A C Library Implementing Basic Data Structures.
+A C Library Implementing Basic Data Structures and several algorithms
 
 # Copyright
 This library is entierely free to use. Feel free to add it to your project of any kind and don't hesitate to create a ticket if you'd like anything to be added.
