@@ -1,7 +1,7 @@
 exec = a.out
 sources = $(wildcard src/*.c)
 objects = $(sources:.c=.o)
-flags = -g -Wall -lm -ldl -fPIC -rdynamic
+flags = -g -Wall -Wextra -lm -ldl -fPIC -rdynamic
 
 
 $(exec): $(objects)
