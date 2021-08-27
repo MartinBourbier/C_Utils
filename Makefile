@@ -12,8 +12,6 @@ $(exec): $(objects)
 
 clean:
 	-rm *.out
-	-rm *.out
-	-rm *.a
 	-rm src/*.o
 
 lint:
