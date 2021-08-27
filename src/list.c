@@ -29,7 +29,7 @@ void *list_append(list_T *list, void *item) {
 }
 
 void list_shift_left(list_T *list, int index) {
-	for (int32_t i = 0; i < list->length - 1; ++i)
+	for (int32_t i = index; i < list->length - 1; ++i)
 	{
 		list->items[i] = list->items[i + 1];
 	}
@@ -60,9 +60,11 @@ void list_remove(list_T *list, void *item, void (*free_method)(void *x)) {
 }
 
 void list_free(list_T *list, void (*free_method)(void *x)) {
-	for (int32_t i = 0; i < list->length; ++i) {
+	if (free_method) {
+        for (int32_t i = 0; i < list->length; ++i) {
 		free_method(list->items[i]);
-	}
+	    }
+    }
 
 	free(list->items);
 	free(list);
