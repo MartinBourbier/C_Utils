@@ -15,10 +15,10 @@ int minimum (int list[], int d, int f) {
     return min2;
 }
 
-void selection_sort(int list[], int n) {
+void selection_sort(int list[], int len) {
     int tmp;
-    for (int i = 0; i < n; i++){
-        int min = minimum(list, i, n - 1);
+    for (int i = 0; i < len; i++){
+        int min = minimum(list, i, len - 1);
         int tmp = list[i];
         list[i] = list[min];
         list[min] = tmp;

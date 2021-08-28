@@ -21,11 +21,5 @@ int main() {
     int arr[] = {8, 6, 7, 6, 11, 2};
     int n = sizeof (arr) / sizeof (arr[0]);
 
-    print_array(arr, n);
-
-    selection_sort(arr, n);
-
-    print_array(arr, n);
-
     return 0;
 }

@@ -4,9 +4,10 @@ A C Library Implementing Basic Data Structures And Several Algorithms.
 # Copyright
 This library is entierely free to use. Feel free to add it to your project of any kind and don't hesitate to create a ticket if you'd like anything to be added.
 
-# Utilities
+# Data Structures
 
 ## Lists
+Header Path : ```#include "include/data_structures/list.h"```
 
 Functions : 
 * ```list_T *init_list(int32_t item_size)```
@@ -36,6 +37,7 @@ Functions :
     * If one value is out of range, prints an error and returns. /!\ BE CAREFUL ! The error is printed in the standard output and not in the error stream.
 
 ## Queues
+Header Path : ```#include "include/data_structures/queue.h"```
 
 Functions :
 * ```queue_T *queue_empty(void)```
@@ -53,6 +55,7 @@ Functions :
     * /!\ BE CAREFUL ! The returned value is a void pointer (```(void *)```), the value can be of any type so make sure to adapt your code depending on the type of the value you are storing.
 
 ## Binary Trees
+Header Path : ```#include "include/data_structures/tree.h"```
 
 Functions :
 * ```uint32_t tree_size(tree_T *tree)```
@@ -69,3 +72,10 @@ Functions :
 * ```void tree_breadth_print(tree_T *tree)```
     * This function prints the tree ```tree``` depending on the depth of the node.
     * /!\ BE CAREFUL ! The printing is really not ideal, so don't relate on this function to visualize the different links between a node an it's parent.
+
+# Sorting Algorithms
+All of the algorithms are located in the same header : ```#include "include/sorting_algorithms/sorting_algorithms.h"```
+
+## Selection Sort
+* ```void selection_sort(int list[], int len)```
+    * Takes a list of int ```list``` and it's length ```len```.
