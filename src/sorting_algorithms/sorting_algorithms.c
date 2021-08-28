@@ -3,47 +3,27 @@
 
 #include <stdlib.h>
 
-int minimum(list_T *list, int d, int f) {
-    int *min1 = (int *)list->items[d];
+int minimum (int list[], int d, int f) {
+    int min1 = list[d];
     int min2 = d;
-
-    for (int i = d + 1; i < f + 1; i++) {
-        if (min1 >= min2) {
+    for (int i = d+1; i < f+1; i++){
+        if (min1 >= list[i]){
             min2 = i;
-            min1 = list->items[i];
+            min1 = list[i];
         }
     }
-
     return min2;
 }
 
-void selection_sort(list_T *list) {
-    for (int i = 0; i < list->length; i++) {
-        int min = minimum(list, i, list->length - 1);
-        int tmp = list->items[i];
-        list->items[i] = list->items[min];
-        list->items[min] = tmp;
+void selection_sort(int list[], int n) {
+    int tmp;
+    for (int i = 0; i < n; i++){
+        int min = minimum(list, i, n - 1);
+        int tmp = list[i];
+        list[i] = list[min];
+        list[min] = tmp;
     }
 }
-
-/*void selection_sort(list_T *list) {
-    // n = length
-
-    int32_t min_idx;
-
-    for (int32_t i = 0; i < list->length; i++)
-    {
-        min_idx = i;
-
-        for (int32_t j = i + 1; j < list->length; j++) {
-            if (list->items[j] < list->items[min_idx]){
-                min_idx = j;
-            }
-        }
-
-        list_swap_values(list, min_idx, i);
-    }
-}*/
 
 void bubble_sort(list_T *list) {
     for (int32_t i = 0; i < list->length - 1; i++)

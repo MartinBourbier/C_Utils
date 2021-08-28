@@ -4,11 +4,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void print_array(list_T *list) {
+void print_array(int arr[], int n) {
     printf("{ ");
-    for (size_t i = 0; i < list->length; i++)
+    for (size_t i = 0; i < n; i++)
     {
-        printf("%d ", (int32_t *) list->items[i]);
+        printf("%d ",  arr[i]);
     }
 
     printf("}\n");
@@ -18,20 +18,14 @@ int main() {
     printf("\033[0;32m"); // Makes the next printf's content Green.
     printf("[C_Utils]: Welcome!\n");
 
-    list_T *list = init_list(sizeof (int32_t));
+    int arr[] = {8, 6, 7, 6, 11, 2};
+    int n = sizeof (arr) / sizeof (arr[0]);
 
-    list_append(list, (void *) 8);
-    list_append(list, (void *) 5);
-    list_append(list, (void *) 0);
-    list_append(list, (void *) 2);
+    print_array(arr, n);
 
-    printf("%d\n", list->length);
+    selection_sort(arr, n);
 
-    print_array(list);
-
-    selection_sort(list);
-
-    print_array(list);
+    print_array(arr, n);
 
     return 0;
 }

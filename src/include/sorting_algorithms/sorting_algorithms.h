@@ -3,7 +3,7 @@
 
 #include "../data_structures/list.h"
 
-void selection_sort(list_T *list);
+void selection_sort(int list[], int n);
 
 void bubble_sort(list_T *list);
 
