@@ -18,14 +18,5 @@ int main() {
     printf("\033[0;32m"); // Makes the next printf's content Green.
     printf("[C_Utils]: Welcome!\n");
 
-    int arr[] = {8, 6, 7, 6, 11, 2};
-    int n = sizeof (arr) / sizeof (arr[0]);
-
-    print_array(arr, n);
-
-    heap_sort(arr, n);
-
-    print_array(arr, n);
-
-    return 0;
+    return EXIT_SUCCESS;
 }
