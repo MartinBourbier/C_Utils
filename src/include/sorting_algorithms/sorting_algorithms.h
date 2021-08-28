@@ -5,14 +5,14 @@
 
 void selection_sort(int list[], int len);
 
-void bubble_sort(list_T *list);
+void bubble_sort(int list[], int len);
 
-void insertion_sort(list_T *list);
+void insertion_sort(int list[], int len);
 
-void merge_sort(list_T *list);
+void merge_sort(int list[], int l, int r);
 
-void quick_sort(list_T *list);
+void quick_sort(int list[], int low, int high);
 
-void heap_sort(list_T *list);
+void heap_sort(int list[], int len);
 
 #endif
