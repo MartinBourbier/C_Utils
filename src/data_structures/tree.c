@@ -12,7 +12,10 @@ uint32_t tree_size(tree_T *tree) {
     return 1 + tree_size(tree->left) + tree_size(tree->right);
 }
 
-static inline int max(int32_t a, int32_t b) { return a > b ? a : b; }
+static inline int max(int32_t a, int32_t b) 
+{
+    return a > b ? a : b;
+}
 
 int32_t tree_height(tree_T *tree) {
     if (tree == NULL) 
