@@ -19,7 +19,7 @@ int main() {
     printf("\033[0;32m"); // Makes the next printf's content Green.
     printf("[C_Utils]: Welcome!\n");
 
-    tree_T *tree = calloc(1, sizeof (struct TREE_STRUCT));
+    /*tree_T *tree = calloc(1, sizeof (struct TREE_STRUCT));
     tree->key = 0;
 
     tree->left = calloc(1, sizeof (struct TREE_STRUCT));
@@ -40,7 +40,7 @@ int main() {
     tree->right->right = calloc(1, sizeof (struct TREE_STRUCT));
     tree->right->right->key = 6;
 
-    print2D(tree);
+    print2D(tree);*/
 
     return EXIT_SUCCESS;
 }
