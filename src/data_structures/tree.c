@@ -62,3 +62,28 @@ void tree_breadth_print(tree_T *tree) {
         
     }
 }
+
+void print2DUtil(tree_T *tree, int space) {
+    if (tree == NULL) {
+        return;
+    }
+
+    space += COUNT;
+
+    print2DUtil(tree->right, space);
+
+    printf("\n");
+    
+    for (int i = 10; i < space; i++) {
+        printf(" ");
+    }
+
+    printf("%d\n", tree->key);
+
+    print2DUtil(tree->left, space);
+}
+
+void print2D(tree_T *tree) {
+    print2DUtil(tree, 0);
+    printf("\n");
+}

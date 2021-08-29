@@ -1,5 +1,6 @@
 #ifndef TREE_H
 #define TREE_H
+#define COUNT 10;
 
 #include <stdint.h>
 
@@ -16,5 +17,7 @@ int32_t tree_height(tree_T *tree);
 void tree_prefix_print(tree_T *tree);
 
 void tree_breadth_print(tree_T *tree);
+
+void print2D(tree_T *tree);
 
 #endif
