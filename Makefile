@@ -4,7 +4,6 @@ s = $(wildcard src/main.c)
 objects = $(sources:.c=.o) $(s:.c=.o)
 flags = -g -Wall -Wextra -lm -ldl -fPIC -rdynamic
 
-
 $(exec): $(objects)
 	gcc $(objects) $(flags) -o $(exec)
 
